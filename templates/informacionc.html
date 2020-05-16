@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Informacion cientifica</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- import the webpage's stylesheet -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body class="fondo">
+    <header class="fondos">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light bg-dark navbar navbar-dark "
+      >
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_branimir-balogovic-faiqrv7fge0-unsplash.jpg?v=1588692801974"
+            class="rounded-circle"
+            width="60"
+            height="60"
+            alt=""
+          />
+        </a>
+        <ul>
+          <li class="nav-item active">
+            <a class="nav-link btn btn-dark" href="/">Inicio </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-dark" href="{{ url_for('contacto') }}">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div
+      class="cover d-flex justify-content-center align-items-center flex-column"
+      style="background-image: url(https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_1cdc-w9keokhajkw-unsplash.jpg?v=1588691997173);"
+    >
+      <h1>
+        La Ciencia VS Covid-19
+      </h1>
+    </div>
+    <section>
+      <div class="indexcards">
+        <p class="introsalud">
+          <h2><u> Pandemia de informacion:</u></h2>
+          Nos encontramos frente a un mar inmenso de infrormacion acerca del Covid-19 y de los avances y descurbimientos de la ciencia sobre este tema.Para los curiosos que desean investigar todo acerca de este virus le recomendamos primero que se familiarize con algunos terminos que encontratra en todo texto relacionado a a este virus tan particular.
+        </p>
+
+
+    <div class="indexcards">
+      <h3><u>Definiciones Importantes</u></h3>
+
+      <dl>
+        <dt><u>Virus</dt></u>
+        <dd>
+          Un virus es una partícula de código genético, ADN o ARN, encapsulada en una vesícula de proteínas. Los virus no se pueden replicar por sí solos. Necesitan infectar células y usar los componentes de la célula huésped para hacer copias de sí mismos. A menudo, el virus daña o mata a la célula huésped en el proceso de multiplicación. 
+        </dd>
+        <dt><u>Inmunidad</u></dt>
+        <dd>
+          Estado de resistencia natural o adquirida que poseen algunos organismos frente a una determinada enfermedad o al ataque de un agente infeccioso o tóxico.
+        </dd>
+        <dt><u>Vacuna</u></dt>
+        <dd>
+          Sustancia compuesta por una suspensión de microorganismos atenuados o muertos que se introduce en el organismo para prevenir y tratar determinadas enfermedades infecciosas; estimula la formación de anticuerpos con lo que se consigue una inmunización contra estas enfermedades.
+        </dd>
+        <dt><u>Ensayo Clinico</u></dt>
+        <dd>Son investigaciones de nuevos medicamentos o vacunas en las que los voluntarios -enfermos o personas sanas- pueden participar. En ellos, se prueban nuevos tratamientos o se comparan diferentes tipos de aplicación de tratamientos ya existentes. </dd>
+        <dt><u>Corona-Virus</dt></u>
+        <dd>
+        Es una extensa familia de virus que pueden causar enfermedades tanto en animales como en humanos. En los humanos, se sabe que varios coronavirus causan infecciones respiratorias que pueden ir desde el resfriado común hasta enfermedades más graves como el síndrome respiratorio de Oriente Medio (MERS) y el síndrome respiratorio agudo severo (SRAS). El coronavirus que se ha descubierto más recientemente causa la enfermedad por coronavirus COVID-19
+        </dd>
+      </dl>
+    </div>
+  </section>
+  <div style="float:left;width:50%;">
+    <div style="padding-right:10px;">
+      <div class="text-center">
+        <img src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_cdc-linionbajm4-unsplash_1.jpg?v=1589478553383" class="traino img-thumbnail rounded">
+      </div>
+    </div></div>
+    
+    <div style="float:right;width:50%;">
+    <div style="padding-left:10px;">
+    
+      <div class="text-center">
+        <img src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_fusion-medical-animation-rnr8d3fnuny-unsplash.jpg?v=1589478967364" class="traino img-thumbnail rounded">
+      </div>
+    </div></div>
+    
+    <div style="clear: both;"></div>
+  <section class="introsalud">
+    <div>
+    <div class="indexcards">
+      <p class="introsalud">
+        <u> Investigacion Critica:</u>
+        Frente a la situacion de contingencia como uuarios de redes sociales y
+        medios de comunicacion nos vemos invadidos de informacion.Si te gustaria
+        infromarte acerca de avances sobre la batalla de la ciencia contra el
+        Covid-19 aqui te dejamos algunos sitios para que puedas visitar.Ademas
+        recordemos que es sumamente importante que acudamos informacion lo mas
+        certera posible.
+      </p>
+      <ul class="list-unstyled">
+        <li class="media">
+          <img
+            src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_descarga.png?v=1589074371681"
+            class="mr-3"
+            alt="..."
+          />
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">Revists Nature</h5>
+            Nature es una de las más prestigiosas revistas científicas a nivel
+            mundial
+            <a href="https://www.nature.com/" class="btn btn-dark">Ir</a>
+          </div>
+        </li>
+        <li class="media my-4">
+          <img
+            src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_sci.jpg?v=1589074595914"
+            class="mr-3"
+            alt="..."
+          />
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">Science</h5>
+            Science es una revista científica y órgano de expresión de la
+            American Association for the Advancement of Science (AAAS), la
+            Asociación Estadounidense para el Avance de la Ciencia.
+            <a href="https://www.sciencemag.org/" class="btn btn-dark">Ir</a>
+          </div>
+        </li>
+      </ul>
+     
+    </div>
+
+    <section class="footer">
+      <div>
+        <!--Pie de pagina-->
+        <p
+          style="color:cornsilk"
+          ;
+          background="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_viktor-forgacs-fcdqdjum6b4-unsplash.jpg?v=1588799035102"
+        >
+          Para mas informacion no dude en contactarse
+        </p>
+        <a href="/contacto" class=" volver btn btn-dark">Contacto</a>
+      </div>
+    </section>
+  </body>
+</html>
+

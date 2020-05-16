@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pandemia Covid-19</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- import the webpage's stylesheet -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body class="fondo">
+    <header class="portadai">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light bg-dark navbar navbar-dark " style="background-color: silver;"
+      >
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_branimir-balogovic-faiqrv7fge0-unsplash.jpg?v=1588692801974"
+            class="rounded-circle"
+            width="60"
+            height="60"
+            alt=""
+          />
+        </a>
+        <ul>
+          <li class="nav-item active">
+            <a class="nav-link btn btn-dark" href="/"> Inicio  </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-dark " href="{{ url_for('contacto') }} "> Contacto</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div
+        class="cover d-flex justify-content-center align-items-center flex-column"
+        style="background-image: url(https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_pills-on-blue-background-3936369.jpg?v=1589211449978);"
+      >
+        <div>
+          <p class="titulop">
+            La pademia del siglo 21
+          </p>
+        </div>
+      </div>
+    </header>
+    <section class="indexcards">
+      <div class="container mt-5 mb-5">
+        <div class="row justify-content-start">
+          <div class="col-12 col-sm-6 mt-2">
+            <div class="card">
+              <img
+                src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_1cdc-w9keokhajkw-unsplash.jpg?v=1588691997173"
+                class="card-img card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Para los amantes de la Ciencia</h5>
+                <p class="card-text">
+                  Informate sobre los avances y novedades de la ciencia de la
+                  lucha contra el virus
+                </p>
+                <a href="{{ url_for('informacionc') }}" class="btn btn-dark"
+                  >Entrar</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 mt-2">
+            <div class="card">
+              <img
+                src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_jamie-street-tb5a-qti6xg-unsplash.jpg?v=1588692229998"
+                class=" card-img card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Salud en casa</h5>
+                <p class="card-text">
+                  Lista de compras inteligentes,ejercicio y recomendaciones para
+                  cuidar tu salud
+                </p>
+                <a href="{{ url_for('salud') }}" class="btn btn-dark"
+                  >Entrar</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 mt-2">
+            <div class="card">
+              <img
+                src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_jessica-lewis-vi6szzwgc34-unsplash.jpg?v=1589333623353"
+                class="card-img card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Manual Practico</h5>
+                <p class="card-text">
+                  Informate de sintomas y protocolos de seguridad e higiene
+                </p>
+                <a href="{{ url_for('manualp') }}" class="btn btn-dark"
+                  >Entrar</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6   mt-2">
+            <div class="card">
+              <img
+                src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_marica-romeo-p65_u1f_od8-unsplash.jpg?v=1589333495827"
+                class="card-img card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Cuidemos la mente</h5>
+                <p class="card-text">
+                  Tips y expereincias para sobrellevar la cuarentena
+                </p>
+                <a href="{{ url_for('psico') }}" class="btn btn-dark"
+                  >Entrar</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div>
+        <!--Pie de pagina-->
+        <p
+          style="color:cornsilk"
+          ;
+          background="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_viktor-forgacs-fcdqdjum6b4-unsplash.jpg?v=1588799035102"
+        >
+          Para mas informacion no dude en contactarse
+        </p>
+        <a href="/contacto" class=" volver btn btn-dark">Contacto</a>
+      </div>
+    </section>
+  </body>
+</html>
+
+
+

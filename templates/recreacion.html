@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Recreación</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- import the webpage's stylesheet -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body class="fondo">
+    <header class="fondos">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light bg-dark navbar navbar-dark "
+      >
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_branimir-balogovic-faiqrv7fge0-unsplash.jpg?v=1588692801974"
+            class="rounded-circle"
+            width="60"
+            height="60"
+            alt=""
+          />
+        </a>
+        <ul>
+          <li class="nav-item active">
+            <a class="nav-link btn btn-dark" href="/">Inicio </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-dark" href="{{ url_for('contacto') }}">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div
+      class="cover d-flex justify-content-center align-items-center flex-column"
+      style="background-image: url(https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_steve-johnson-idmd4iw9xve-unsplash.jpg?v=1589159161091);"
+    >
+      <h1>
+        Para entrenterse en casa
+      </h1>
+    </div>
+    <section class="indexcards">
+      <h2><u>Actividades sugeridas </u></h2>
+
+      <ul class="list-unstyled">
+        <li class="media my-4">
+          <img
+            src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_pinceles.jpg?v=1589204571427"
+            class="mr-3 rounded"
+            alt="pinceles"
+          />
+          <div class="media-body">
+            <h5 class="mt-0 mb-1"><u>Arte</u></h5>
+            Las actividades manuales ponen a prueba nustras habilidades
+            creativas, animate a pintar, dibujar, recortar al mejor estilo art
+            attack.Te dejamos un lugar para que busques algunas ideas
+            ¡Compartinos tus creacione cuando esten listas!
+            <a
+              href="https://ar.pinterest.com/cejaurena/manualidades-para-la-cuarentena/"
+              class="btn btn-dark"
+              >Ir</a
+            >
+          </div>
+        </li>
+        <li class="media my-4">
+          <img
+            src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_popcorn.jpg?v=1589204216219"
+            class="mr-3 rounded"
+            alt="baldepochoclos"
+          />
+          <div class="media-body">
+            <h5 class="mt-0 mb-1"><u>Cine</u></h5>
+            Nada mas lindo que ver peliculas en casa, te recomendamoos una sitio
+            donde podes entoncrar las mejores pleiclas y series recomendades
+            segun tus intereses edad y estado de animo
+            <a
+              href="http://www.sensacine.com/peliculas/mejores/nota-espectadores/"
+              class="btn btn-dark"
+              >Ir</a
+            >
+          </div>
+        </li>
+        <li class="media my-4">
+          <img
+            src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_spotify_logo.png?v=1589203365278"
+            class="mr-3 rounded"
+            alt="..."
+          />
+          <div class="media-body">
+            <h5 class="mt-0 mb-1"><u>Musica</u></h5>
+            Aprovevhemos la tecnologia para disfrutar de la mejor musica desde
+            tu tlefno celular, te dejamos el lugar para que encuntres tu
+            playlist ideal en spotify de manera super persoanlizada para que
+            esuces en tu casa.Baila, ordena ,limpia y dejate fluir liberando
+            endorfinas que alimenten tu cererbo.
+            <a
+              href="https://open.spotify.com/playlist/5IO45YtKXacQ3ACtDLihbP"
+              class="btn btn-dark"
+              >Ir</a
+            >
+          </div>
+        </li>
+        <li class="media my-4">
+          <img
+            src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_libro.jpg?v=1589204020610"
+            class="mr-3 rounded"
+            alt="libro"
+          />
+          <div class="media-body">
+            <h5 class="mt-0 mb-1"><u>Lecturas</u></h5>
+            Para los grandes lectores que disfrutan de novelas, polciales,libros
+            de ciencia ficcion encontra listas de libros segun tu interes.
+            <a
+              href="https://www.casadellibro.com/libros-recomendados"
+              class="btn btn-dark"
+              >Ir</a
+            >
+          </div>
+        </li>
+        <li class="media my-4">
+          <img
+            src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_ted.png?v=1589203816878"
+            class="mr-3 rounded"
+            alt="logo ted"
+          />
+          <div class="media-body">
+            <h5 class="mt-0 mb-1"><u>Inspirate</u></h5>
+            Busca tu inspiracion donde mas te gusta.El sitio ofical de charlas
+            TED-Ideas Worth Spreading te ofrece una increible cantidad de
+            charlas intersantes para ver segun tus gustos personales,ingrese al
+            sitio directamente dessde aqui y comenza tu busca persalizada de
+            charlas.
+            <a href="https://www.ted.com/" class="btn btn-dark">Ir</a>
+          </div>
+        </li>
+
+        <li class="media my-4">
+          <img
+            src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_quora.png?v=1589203663579"
+            class="mr-3 rounded"
+            alt="logo quora"
+          />
+          <div class="media-body">
+            <h5 class="mt-0 mb-1"><u>Dejete llear</u></h5>
+            Si te enctanta interactr con gente y la cuarentna te lo impide Quora
+            es tu lugar.Este sitio ofrece la oportunidad de charlar con gente
+            alrededor de todo el mundo ,animate a preguntar y responder sobre
+            los temas que mas te gustan, no esperes mas y accede a Quora desde
+            aqui.
+            <a href="https://www.quora.com/" class="btn btn-dark">Ir</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="footer">
+      <div>
+        <!--Pie de pagina-->
+        <p
+          style="color:cornsilk"
+          ;
+          background="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_viktor-forgacs-fcdqdjum6b4-unsplash.jpg?v=1588799035102"
+        >
+          Para mas informacion no dude en contactarse
+        </p>
+        <a href="/contacto" class=" volver btn btn-dark">Contacto</a>
+      </div>
+    </section>
+  </body>
+</html>
+
+  

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cultiva tu mente</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- import the webpage's stylesheet -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body class="fondo">
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light bg-dark navbar navbar-dark "
+      >
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_branimir-balogovic-faiqrv7fge0-unsplash.jpg?v=1588692801974"
+            class="rounded-circle"
+            width="60"
+            height="60"
+            alt=""
+          />
+        </a>
+        <ul>
+          <li class="nav-item active">
+            <a class="nav-link btn btn-dark" href="/">Inicio </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-dark" href="{{ url_for('contacto') }}">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div
+      class="cover d-flex justify-content-center align-items-center flex-column"
+      style="background-image: url(https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_marica-romeo-p65_u1f_od8-unsplash.jpg?v=1589333495827);"
+    >
+      <h1>
+        El cerebro es nuestra mejor arma
+      </h1>
+    </div>
+    <section class="indexcards">
+      <p class="introsalud">
+        <u>Salud Mental</u>
+        Frente a las condiciones de encierro debemos prioirzar el cudiado de
+        nuestra salud mental.El intelecto es la mejor herramienta que podemos
+        desarollar para el futuro.Por esto deberiamos aprovechar la cuarentena
+        para aprender cosas nuevas, participar de cursos y seminarios, aprender
+        idiomas o lo que sea que te incentive a estimular todas las areas del
+        cererbo .Tambien es importante en este tiempo realizar actividades
+        recreativas que nos generen momentos de gratitud y poder explorat al
+        maximo muestras capacidades.Te proponemos que investigues tanto el area
+        de la recreacion como el de aprendizaje a distancia.
+      </p>
+
+      <div class="container mt-5 mb-5">
+        <div class="row justify-content-start">
+          <div class="col-12 col-sm-6 mt-2">
+            <div class="card">
+              <img
+                src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_steve-johnson-idmd4iw9xve-unsplash.jpg?v=1589159161091"
+                class="card-img card-img-top"
+                alt="pinceles"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Recreacion</h5>
+                <p class="card-text">
+                  Explota tu creatividad al 100%
+                </p>
+                <a href="{{ url_for('recreacion') }}" class="btn btn-dark"
+                  >Ir</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 mt-2">
+            <div class="card">
+              <img
+                src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_frank-vessia-9uprlljfkp8-unsplash_1.jpg?v=1589160069846"
+                class=" card-img card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Generando Sinapsis</h5>
+                <p class="card-text">
+                  Aprende nuevas cosas segun tu interes
+                </p>
+                <a href="{{ url_for('aprendizaje') }}" class="btn btn-dark"
+                  >Ir</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div>
+        <!--Pie de pagina-->
+        <p
+          style="color:cornsilk"
+          ;
+          background="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_viktor-forgacs-fcdqdjum6b4-unsplash.jpg?v=1588799035102"
+        >
+          Para mas informacion no dude en contactarse
+        </p>
+        <a href="/contacto" class=" volver btn btn-dark">Contacto</a>
+      </div>
+    </section>
+  </body>
+</html>
