@@ -8,6 +8,7 @@ margin: 0em;
 .indexcards{
   background-color: gray;
   margin-left: 5px;
+  margin-top: 5px;
 }
 .fondo{
   background-color: grey;
@@ -112,9 +113,9 @@ margin: 0em;
   }
 
  img.izquierda{
-   margin-left: 20px;
+   margin-left: 10px;
    margin-top: 10px;
-   margin-right: 20px;
+   margin-right: 10px;
   float: left 
  }
  img.traino{
@@ -126,4 +127,13 @@ margin: 0em;
  }
  .margentitulos{
    margin-left: 5px;
+ }
+ .textoconta{
+  font-size: medium;
+  text-align: left;
+  font-weight: bold;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  margin-top: 5px;
+  margin-left: 20px;
+
  }
