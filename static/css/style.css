@@ -7,7 +7,7 @@ margin: 0em;
 }
 .indexcards{
   background-color: gray;
-  margin-left: 5px;
+  margin-left: 0px;
   margin-top: 5px;
   margin-bottom: 2px;
 }
@@ -22,18 +22,21 @@ margin: 0em;
   background-blend-mode: darken;
   color: white;
 }
-.portadai{
-  background-color:whitesmoke;
 
-}
-.titulo{
-  color:whitesmoke;
-  text-align: end;
-}
 
-.titulop{
+/*estilo de texto muy usado */
+.introsalud{
+  font-size: medium;
   text-align: left;
+  font-style: italic;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  margin-top: 5px;
+  margin-left: 5px;
+
 }
+
+
+/*estilo de las tarjetas */
 .card {
   border: 0 !important;
 }
@@ -50,19 +53,9 @@ margin: 0em;
   object-fit: cover;
 }
 
-.especial{
-  min-height: 10rem;
-  color:  black;
-  font-family: "Homer Simpson UI";
-  font-size: 20px;
-  font-weight: bolder;
 
-}
-.intro1{
-  font: caption;
-  font-family: fantasy;
-}
 
+/*estilo de los elemntos de listas */
 .list-group{
   font: caption;
   font-family: fantasy;
@@ -72,8 +65,34 @@ margin: 0em;
   font-family: cursive;
   font: menu;
 }
+.list-unstyled{
+  margin-left: 20px;
+}
 
-.footer{
+
+/*formato de imagenes */
+ img.izquierda{
+   margin-left: 10px;
+   margin-top: 10px;
+   margin-right: 10px;
+  float: left 
+ }
+ img.traino{
+   margin-top: initial;
+
+ }
+
+/*pie de página */
+ .textoconta{
+  font-size: medium;
+  text-align: left;
+  font-weight: bold;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  margin-top: 5px;
+  margin-left: 20px;
+
+ }
+ .footer{
   background-image:  url("https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_viktor-forgacs-fcdqdjum6b4-unsplash.jpg?v=1588799035102");
   background-color:silver;
   min-height: 10rem;
@@ -86,57 +105,4 @@ margin: 0em;
   margin-left: 2px;
 
 }
-  .introsalud{
-    font-size: medium;
-    text-align: left;
-    font-style: italic;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    margin-top: 5px;
-    margin-left: 10px;
-
-  }
-  .tapanutri{
-    font-size: medium;
-    text-align: left;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    color:black;
-
-
-  }
-  .cartasalud{
-    background-color: thistle;
-  }
-  .fondos{
-    background-color:whitesmoke;
-  }
-  .fotom{
-    display:block;
-    margin:auto;
-  
-  }
-
- img.izquierda{
-   margin-left: 10px;
-   margin-top: 10px;
-   margin-right: 10px;
-  float: left 
- }
- img.traino{
-   margin-top: initial;
-
- }
- .list-unstyled{
-   margin-left: 20px;
- }
- .margentitulos{
-   margin-left: 5px;
- }
- .textoconta{
-  font-size: medium;
-  text-align: left;
-  font-weight: bold;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  margin-top: 5px;
-  margin-left: 20px;
-
- }
+ 
