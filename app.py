@@ -5,7 +5,7 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
-@app.route('/informacionc/')
+@app.route('/ciencia/')
 def informacionc():
     return  render_template('informacionc.html')
 
@@ -13,12 +13,12 @@ def informacionc():
 def salud():
     return  render_template('salud.html')
 
-@app.route('/manualp/')
+@app.route('/Informate/')
 def manualp():
     return  render_template('manualp.html')
 
 
-@app.route('/psico/')
+@app.route('/Aprendizaje/')
 def psico():
     return  render_template('psico.html')
 
@@ -29,7 +29,7 @@ def contacto():
 
 
 
-@app.route('/listasuper/')
+@app.route('/alimentación/')
 def listasuper():
     return  render_template('listasuper.html')
 
@@ -40,15 +40,15 @@ def entrenamiento():
     return  render_template('entrenamiento.html')
 
 
-@app.route('/recreacion/')
+@app.route('/recreación/')
 def recreacion():
     return  render_template('recreacion.html')
 
 
 
-@app.route('/aprendizaje/')
+@app.route('/educación/')
 def aprendizaje():
     return  render_template('aprendizaje.html')
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0")
