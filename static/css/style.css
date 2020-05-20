@@ -1,19 +1,15 @@
-/* CSS files add styling rules to your content */
+/* Estilo de barra de navegacion y fondo */
 .navbar{
   background-color:snow;
 }
 body {
 margin: 0em;
 }
-.indexcards{
-  background-color: gray;
-  margin-left: 5px;
-  margin-top: 5px;
-  margin-bottom: 2px;
-}
+
 .fondo{
   background-color: grey;
 }
+/* Estilo aplicado a todas las portadas */
 .cover {
   height: 400px;
   background-size: cover;
@@ -36,6 +32,16 @@ margin: 0em;
 }
 
 
+.indexcards{
+  background-color: gray;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 2px;
+}
+
+div.a{
+  text-align: center;
+}
 /*estilo de las tarjetas */
 .card {
   border: 0 !important;
@@ -98,7 +104,6 @@ margin: 0em;
   font-style: itallic;
   font-weight: bolder;
   margin-top: 5px;
-  margin-left: 2px;
 
 }
  
