@@ -11,11 +11,12 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <!-- Anclaje al archivo de estilos-->
+    <!-- Anclaje con el Framework de BOOTSRAP-->
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/style.css') }}"
     />
+    <!-- Anclaje al archivo de estilos-->
   </head>
   <body class="fondo">
     <!-- Barra de navegacion y portada-->
@@ -55,6 +56,7 @@
     <!-- cuerpo de la seccion-->
 
     <section class="indexcards">
+      <!-- Introduccion a la seccion con imagen al costado-->
       <p class="introsalud">
         <img
           src=" https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_img-8012_1.jpg?v=1589334205928"
@@ -68,6 +70,7 @@
       </p>
     </section>
     <div class="indexcards">
+      <!-- links a sitios recomendados-->
       <h3><u>Sitios recomedados:</u></h3>
       <p>Gym Virtual</p>
       <a href="http://gymvirtual.com/" class="btn btn-dark">Ir</a>
@@ -75,8 +78,7 @@
       <a
         href="https://www.runtastic.com/blog/es/entrenar-en-casa-sin-equipamiento/ "
         class="btn btn-dark"
-      >
-        Ir</a
+        >Ir</a
       >
       <p>Mi gimnasio en casa</p>
       <a href="https://migymencasa.com/" class="btn btn-dark">Ir</a>
@@ -86,18 +88,12 @@
       <a href="https://www.coachmag.co.uk/" class="btn btn-dark">Ir</a>
     </div>
 
+    <!--Pie de pagina-->
     <section class="footer">
-      <div>
-        <!--Pie de pagina-->
-        <p
-          style="color:cornsilk"
-          ;
-          background="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_viktor-forgacs-fcdqdjum6b4-unsplash.jpg?v=1588799035102"
-        >
-          Para mas información no dudes en contactarse
-        </p>
-        <a href="/contacto" class=" volver btn btn-dark">Contacto</a>
-      </div>
+      <p style="color:cornsilk">
+        Para más información no dudes en contactarte
+      </p>
+      <a href="/contacto" class="btn btn-dark">Contacto</a>
     </section>
   </body>
 </html>

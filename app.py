@@ -1,6 +1,11 @@
-from flask import Flask, render_template
-app = Flask(__name__)
 
+#importo del Framwewok
+from flask import Flask, render_template
+#mi objeto app
+app = Flask(__name__)
+#Rutas de la página
+#Render template:devuelve las plantillas HTML
+#def:funciones 
 @app.route('/')
 def home():
     return render_template('index.html')
@@ -44,11 +49,12 @@ def entrenamiento():
 def recreacion():
     return  render_template('recreacion.html')
 
-
-
 @app.route('/educación/')
 def aprendizaje():
     return  render_template('aprendizaje.html')
 
+
+#Validacion,deja el programa en ejecucion
+#host:acceder desde otras IP
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0")

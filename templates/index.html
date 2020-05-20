@@ -11,11 +11,12 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <!-- Anclaje al archivo de estilos-->
+    <!-- Anclaje con el Framework de BOOTSRAP-->
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/style.css') }}"
     />
+    <!-- Anclaje al archivo de estilos-->
   </head>
   <body class="fondo">
     <!-- Barra de navegacion y portada-->
@@ -59,6 +60,7 @@
     </header>
     <!-- cuerpo de la seccion-->
     <section class="indexcards">
+      <!-- Presentacion de las 4 cartas cada una con su ruta-->
       <div class="container mt-5 mb-5">
         <div class="row justify-content-start">
           <div class="col-12 col-sm-6 mt-2">
@@ -70,7 +72,8 @@
               />
 
               <div class="card-body">
-                <h5 class="card-title">La Ciencia y el Corona Virus </h5>
+                <!-- Carta ciencia-->
+                <h5 class="card-title">La Ciencia y el Corona Virus</h5>
                 <p class="card-text">
                   Informate sobre los avances y novedades de la ciencia de la
                   lucha contra el virus
@@ -89,6 +92,7 @@
                 alt="foto salud"
               />
               <div class="card-body">
+                <!-- Carta salud-->
                 <h5 class="card-title">Salud en casa</h5>
                 <p class="card-text">
                   Lista de compras inteligentes, ejercicio y recomendaciones
@@ -106,6 +110,7 @@
                 alt="foto lavamanos"
               />
               <div class="card-body">
+                <!-- Carta informacion util-->
                 <h5 class="card-title">Información Útil</h5>
                 <p class="card-text">
                   Informate de síntomas y protocolos de seguridad e higiene
@@ -117,7 +122,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-sm-6   mt-2">
+          <div class="col-12 col-sm-6 mt-2">
             <div class="card">
               <img
                 src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_anastasiia-chepinska-obmbhmrc3pw-unsplash.jpg?v=1589731177849"
@@ -125,6 +130,7 @@
                 alt="foto ventanal"
               />
               <div class="card-body">
+                <!-- Carta Aprendizaje-->
                 <h5 class="card-title">Aprender en casa</h5>
                 <p class="card-text">
                   Encontrá ideas para recrearte y consejos útlies para la
@@ -137,18 +143,12 @@
         </div>
       </div>
     </section>
+    <!--Pie de pagina-->
     <section class="footer">
-      <div>
-        <!--Pie de pagina-->
-        <p
-          style="color:cornsilk"
-          ;
-          background="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_viktor-forgacs-fcdqdjum6b4-unsplash.jpg?v=1588799035102"
-        >
-          Para mas información no dudes en contactarte
-        </p>
-        <a href="/contacto" class=" volver btn btn-dark">Contacto</a>
-      </div>
+      <p style="color:cornsilk">
+        Para más información no dudes en contactarte
+      </p>
+      <a href="/contacto" class="btn btn-dark">Contacto</a>
     </section>
   </body>
 </html>

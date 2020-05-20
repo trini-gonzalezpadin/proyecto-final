@@ -11,11 +11,12 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <!-- Anclaje al archivo de estilos-->
+    <!-- Anclaje con el Framework de BOOTSRAP-->
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/style.css') }}"
     />
+    <!-- Anclaje al archivo de estilos-->
   </head>
   <body class="fondo">
     <!-- Barra de navegacion y portada-->
@@ -44,18 +45,18 @@
           </li>
         </ul>
       </nav>
+      <div
+        class="cover d-flex justify-content-center align-items-center flex-column"
+        style="background-image: url(https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_jamie-street-tb5a-qti6xg-unsplash.jpg?v=1588692229998);"
+      >
+        <h1>
+          Salud en casa
+        </h1>
+      </div>
     </header>
-
-    <div
-      class="cover d-flex justify-content-center align-items-center flex-column"
-      style="background-image: url(https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_jamie-street-tb5a-qti6xg-unsplash.jpg?v=1588692229998);"
-    >
-      <h1>
-        Salud en casa
-      </h1>
-    </div>
     <!-- cuerpo de la seccion-->
     <section class="indexcards">
+      <!-- Introducción a la sección-->
       <p class="introsalud">
         <u> Sistema inmune:</u>
         Se trata de nuestro ejército de batalla frente a la invasión de agentes
@@ -81,6 +82,7 @@
         estar en el individuo factor de gran importanica en la situación actual.
       </p>
       <div class="container mt-5 mb-5">
+        <!-- Presentacion de las 2 cratas con ruta dentro del Sitio Web-->
         <div class="row justify-content-start">
           <div class="col-12 col-sm-6 mt-2">
             <div class="card">
@@ -90,6 +92,7 @@
                 alt="..."
               />
               <div class="card-body">
+                <!-- Carta nutrición-->
                 <h5 class="card-title">Nutrición en tiempos de pandemia</h5>
                 <p class="card-text">
                   Infromación nutrcional y lista de compras inteligente para
@@ -109,6 +112,7 @@
                 alt="..."
               />
               <div class="card-body">
+                <!-- Carta entrenamiento-->
                 <h5 class="card-title">Entrenamiento</h5>
                 <p class="card-text">
                   Ideas para entrenar en casa
@@ -122,18 +126,12 @@
         </div>
       </div>
     </section>
+    <!--Pie de pagina-->
     <section class="footer">
-      <div>
-        <!--Pie de pagina-->
-        <p
-          style="color:cornsilk"
-          ;
-          background="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_viktor-forgacs-fcdqdjum6b4-unsplash.jpg?v=1588799035102"
-        >
-          Para mas información no dudes en contactarte
-        </p>
-        <a href="/contacto" class=" volver btn btn-dark">Contacto</a>
-      </div>
+      <p style="color:cornsilk">
+        Para más información no dudes en contactarte
+      </p>
+      <a href="/contacto" class="btn btn-dark">Contacto</a>
     </section>
   </body>
 </html>

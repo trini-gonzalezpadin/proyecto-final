@@ -11,11 +11,12 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <!-- Anclaje al archivo de estilos-->
+    <!-- Anclaje con el Framework de BOOTSRAP-->
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/style.css') }}"
     />
+    <!-- Anclaje al archivo de estilos-->
   </head>
   <body class="fondo">
     <!-- Barra de navegacion y portada-->
@@ -43,16 +44,17 @@
           </li>
         </ul>
       </nav>
+      <div
+        class="cover d-flex justify-content-center align-items-center flex-column"
+        style="background-image: url(https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_jessica-lewis-vi6szzwgc34-unsplash.jpg?v=1589333623353);"
+      >
+        <h1>
+          Infromación Útil
+        </h1>
+      </div>
     </header>
-    <div
-      class="cover d-flex justify-content-center align-items-center flex-column"
-      style="background-image: url(https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_jessica-lewis-vi6szzwgc34-unsplash.jpg?v=1589333623353);"
-    >
-      <h1>
-        Infromación Útil
-      </h1>
-    </div>
     <p class="introsalud">
+      <!-- Introduccion a la seccion-->
       <u> Para tomar nota</u>
       Aquí podes encontrar de forma sencilla la información importante que
       deberías saber acerca de protoloclos, medidas de seguridad e higiene,
@@ -68,7 +70,7 @@
         scrolldelay="100"
         direction="left"
         crollamount="8"
-      >
+        ><!-- propiedades de la corredera -->
         <img
           src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Fmm.jpg?v=1589393718590"
           class="traino img-thumbnail rounded"
@@ -152,18 +154,12 @@
       </marquee>
     </section>
 
+    <!--Pie de pagina-->
     <section class="footer">
-      <div>
-        <!--Pie de pagina-->
-        <p
-          style="color:cornsilk"
-          ;
-          background="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_viktor-forgacs-fcdqdjum6b4-unsplash.jpg?v=1588799035102"
-        >
-          Para mas información no dudes en contactarte
-        </p>
-        <a href="/contacto" class=" volver btn btn-dark">Contacto</a>
-      </div>
+      <p style="color:cornsilk">
+        Para más información no dudes en contactarte
+      </p>
+      <a href="/contacto" class="btn btn-dark">Contacto</a>
     </section>
   </body>
 </html>

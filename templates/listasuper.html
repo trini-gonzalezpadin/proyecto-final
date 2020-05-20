@@ -11,11 +11,13 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <!-- Anclaje al archivo de estilos-->
+    <!-- Anclaje con el Framework de BOOTSRAP-->
+
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/style.css') }}"
     />
+    <!-- Anclaje al archivo de estilos-->
   </head>
   <body class="fondo">
     <!-- Barra de navegacion y portada-->
@@ -43,20 +45,21 @@
           </li>
         </ul>
       </nav>
-    </header>
 
-    <div
-      class="cover d-flex justify-content-center align-items-center flex-column"
-      style="background-image: url(https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_ja-ma--goux23dnks-unsplash.jpg?v=1588798048599);"
-    >
-      <h1>
-        Defendete del Corona Virus
-      </h1>
-    </div>
+      <div
+        class="cover d-flex justify-content-center align-items-center flex-column"
+        style="background-image: url(https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_ja-ma--goux23dnks-unsplash.jpg?v=1588798048599);"
+      >
+        <h1>
+          Defendete del Corona Virus
+        </h1>
+      </div>
+    </header>
 
     <!-- cuerpo de la seccion-->
     <section class="indexcards">
       <h2><u>Información sobre los Macro-Nutrientes </u></h2>
+      <!-- Listado macro nutrientes con foto-->
 
       <ul class="list-unstyled">
         <li class="media my-4">
@@ -134,6 +137,7 @@
       </ul>
 
       <div class="indexcards">
+        <!-- listado descriptivo de compras -->
         <h2>
           <u>Lista de Compras Inteligente</u>
           <img
@@ -185,18 +189,12 @@
         </dl>
       </div>
     </section>
+    <!--Pie de pagina-->
     <section class="footer">
-      <div>
-        <!--Pie de pagina-->
-        <p
-          style="color:cornsilk"
-          ;
-          background="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_viktor-forgacs-fcdqdjum6b4-unsplash.jpg?v=1588799035102"
-        >
-          Para mas información no dude en contactarse
-        </p>
-        <a href="/contacto" class=" volver btn btn-dark">Contacto</a>
-      </div>
+      <p style="color:cornsilk">
+        Para más información no dudes en contactarte
+      </p>
+      <a href="/contacto" class="btn btn-dark">Contacto</a>
     </section>
   </body>
 </html>

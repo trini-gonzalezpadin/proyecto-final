@@ -11,11 +11,12 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <!-- Anclaje al archivo de estilos-->
+    <!-- Anclaje con el Framework de BOOTSRAP-->
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/style.css') }}"
     />
+    <!-- Anclaje al archivo de estilos-->
   </head>
   <body class="fondo">
     <!-- Barra de navegacion y portada-->
@@ -37,91 +38,139 @@
             <a class="nav-link btn btn-dark" href="/">Inicio </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-dark" href="{{ url_for('contacto') }}">Contacto</a>
+            <a class="nav-link btn btn-dark" href="{{ url_for('contacto') }}"
+              >Contacto</a
+            >
           </li>
         </ul>
       </nav>
-    </header>
 
-    <div
-      class="cover d-flex justify-content-center align-items-center flex-column"
-      style="background-image: url(https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_1cdc-w9keokhajkw-unsplash.jpg?v=1588691997173);"
-    >
-      <h1>
-        La Ciencia VS Corona-Virus
-      </h1>
-    </div>
-      <!-- cuerpo de la seccion-->
-      <div class="indexcards">
-            <h2><u> Pandemia de información</u></h2>
-            <p class="introsalud">
-            Nos encontramos frente a un mar inmenso de información acerca del Corona Virus, de los avances y descubrimientos de la ciencia sobre este tema.Para los curiosos que deseen investigar todo acerca de este virus te recomendamos primero que te pongasen contacto con algunos términos que encontrará en todo texto relacionado a a este virus tan particular.
-          </p>
+      <div
+        class="cover d-flex justify-content-center align-items-center flex-column"
+        style="background-image: url(https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_1cdc-w9keokhajkw-unsplash.jpg?v=1588691997173);"
+      >
+        <h1>
+          La Ciencia VS Corona-Virus
+        </h1>
       </div>
-
+    </header>
+    <!-- cuerpo de la seccion-->
+    <div class="indexcards">
+      <!-- Introduccion 1 de la seccion-->
+      <h2><u> Pandemia de información</u></h2>
+      <p class="introsalud">
+        Nos encontramos frente a un mar inmenso de información acerca del Corona
+        Virus, de los avances y descubrimientos de la ciencia sobre este
+        tema.Para los curiosos que deseen investigar todo acerca de este virus
+        te recomendamos primero que te pongasen contacto con algunos términos
+        que encontrará en todo texto relacionado a a este virus tan particular.
+      </p>
+    </div>
 
     <div class="indexcards">
+      <!-- Lista descirptiva-->
       <h3><u>Glosario</u></h3>
 
       <dl>
         <dt><u>Virus</u></dt>
         <dd>
-          Un virus es una partícula de código genético, ADN o ARN, encapsulada en una vesícula de proteínas. Los virus no se pueden replicar por sí solos. Necesitan infectar células y usar los componentes de la célula huésped para hacer copias de sí mismos. A menudo, el virus daña o mata a la célula huésped en el proceso de multiplicación. 
+          Un virus es una partícula de código genético, ADN o ARN, encapsulada
+          en una vesícula de proteínas. Los virus no se pueden replicar por sí
+          solos. Necesitan infectar células y usar los componentes de la célula
+          huésped para hacer copias de sí mismos. A menudo, el virus daña o mata
+          a la célula huésped en el proceso de multiplicación.
         </dd>
         <dt><u>Inmunidad</u></dt>
         <dd>
-          Estado de resistencia natural o adquirida que poseen algunos organismos frente a una determinada enfermedad o al ataque de un agente infeccioso o tóxico.
+          Estado de resistencia natural o adquirida que poseen algunos
+          organismos frente a una determinada enfermedad o al ataque de un
+          agente infeccioso o tóxico.
         </dd>
         <dt><u>Vacuna</u></dt>
         <dd>
-          Sustancia compuesta por una suspensión de microorganismos atenuados o muertos que se introduce en el organismo para prevenir y tratar determinadas enfermedades infecciosas; estimula la formación de anticuerpos con lo que se consigue una inmunización contra estas enfermedades.
+          Sustancia compuesta por una suspensión de microorganismos atenuados o
+          muertos que se introduce en el organismo para prevenir y tratar
+          determinadas enfermedades infecciosas; estimula la formación de
+          anticuerpos con lo que se consigue una inmunización contra estas
+          enfermedades.
         </dd>
         <dt><u>Ensayo Clínico</u></dt>
-        <dd>Son investigaciones de nuevos medicamentos o vacunas en las que los voluntarios -enfermos o personas sanas- pueden participar. En ellos, se prueban nuevos tratamientos o se comparan diferentes tipos de aplicación de tratamientos ya existentes. </dd>
+        <dd>
+          Son investigaciones de nuevos medicamentos o vacunas en las que los
+          voluntarios -enfermos o personas sanas- pueden participar. En ellos,
+          se prueban nuevos tratamientos o se comparan diferentes tipos de
+          aplicación de tratamientos ya existentes.
+        </dd>
         <dt><u>Corona-Virus</u></dt>
         <dd>
-        Es una extensa familia de virus que pueden causar enfermedades tanto en animales como en humanos. En los humanos, se sabe que varios coronavirus causan infecciones respiratorias que pueden ir desde el resfriado común hasta enfermedades más graves como el síndrome respiratorio de Oriente Medio (MERS) y el síndrome respiratorio agudo severo (SRAS). El coronavirus que se ha descubierto más recientemente causa la enfermedad por coronavirus COVID-19
+          Es una extensa familia de virus que pueden causar enfermedades tanto
+          en animales como en humanos. En los humanos, se sabe que varios
+          coronavirus causan infecciones respiratorias que pueden ir desde el
+          resfriado común hasta enfermedades más graves como el síndrome
+          respiratorio de Oriente Medio (MERS) y el síndrome respiratorio agudo
+          severo (SRAS). El coronavirus que se ha descubierto más recientemente
+          causa la enfermedad por coronavirus COVID-19
         </dd>
         <dt><u>Covid-19</u></dt>
         <dd>
-          La COVID‑19 es la enfermedad infecciosa causada por el coronavirus que se ha descubierto más recientemente. Tanto este nuevo virus como la enfermedad que provoca eran desconocidos antes de que estallara el brote en Wuhan (China) en diciembre de 2019. Actualmente la COVID‑19 es una pandemia que afecta a muchos países de todo el mundo.
+          La COVID‑19 es la enfermedad infecciosa causada por el coronavirus que
+          se ha descubierto más recientemente. Tanto este nuevo virus como la
+          enfermedad que provoca eran desconocidos antes de que estallara el
+          brote en Wuhan (China) en diciembre de 2019. Actualmente la COVID‑19
+          es una pandemia que afecta a muchos países de todo el mundo.
         </dd>
         <dt><u>Ventilación Mecánica</u></dt>
         <dd>
-          La ventilación mecánica (VM) se conoce como todo procedimiento de respiración artificial que emplea un aparato para suplir o colaborar con la función respiratoria de una persona, que no puede o no se desea que lo haga por sí misma, de forma que mejore la oxigenación e influya así mismo en la mecánica pulmonar. El ventilador es un generador de presión positiva en la vía aérea que suple la fase activa del ciclo respiratorio (se fuerza la entrada de aire en la vía aérea central y en los alveolos).
+          La ventilación mecánica (VM) se conoce como todo procedimiento de
+          respiración artificial que emplea un aparato para suplir o colaborar
+          con la función respiratoria de una persona, que no puede o no se desea
+          que lo haga por sí misma, de forma que mejore la oxigenación e influya
+          así mismo en la mecánica pulmonar. El ventilador es un generador de
+          presión positiva en la vía aérea que suple la fase activa del ciclo
+          respiratorio (se fuerza la entrada de aire en la vía aérea central y
+          en los alveolos).
         </dd>
       </dl>
     </div>
-      
-  
-  <!-- Imagenes cienia una al lado de la otra-->
-  <div style="float:left;width:50%;">
-    <div style="padding-right:10px;">
-      <div class="text-center">
-        <img src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_cdc-linionbajm4-unsplash_1.jpg?v=1589478553383" class="img-thumbnail rounded">
+
+    <!-- Imagenes cienia una al lado de la otra-->
+    <div style="float:left;width:50%;">
+      <div style="padding-right:10px;">
+        <div class="text-center">
+          <img
+            src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_cdc-linionbajm4-unsplash_1.jpg?v=1589478553383"
+            class="img-thumbnail rounded"
+          />
+        </div>
       </div>
-    </div></div>
-    
+    </div>
+
     <div style="float:right;width:50%;">
-    <div style="padding-left:10px;">
-    
-      <div class="text-center">
-        <img src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_fusion-medical-animation-rnr8d3fnuny-unsplash.jpg?v=1589478967364" class="img-thumbnail rounded">
+      <div style="padding-left:10px;">
+        <div class="text-center">
+          <img
+            src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_fusion-medical-animation-rnr8d3fnuny-unsplash.jpg?v=1589478967364"
+            class="img-thumbnail rounded"
+          />
+        </div>
       </div>
-    </div></div>
-    
+    </div>
+
     <div style="clear: both;"></div>
-    <!-- Fuentes recomendadas-->
+    <!-- -->
     <div class="indexcards">
+      <!--Introducción 2 -->
       <p class="introsalud">
         <u> Investigación Crítica:</u>
         Frente a la situación de contingencia como usarios de redes sociales y
-        medios de comunicacion disponemos de gran cantidad de informacion.Si te gustaría
-        infromarte acerca de avances sobre la batalla de la ciencia contra el
-        Corona-Virus, aquí te dejamos algunos sitios para que puedas visitar.Siempre recordá que si querés ser un buen científico debes saber recolectar información de calidad.
-
+        medios de comunicacion disponemos de gran cantidad de informacion.Si te
+        gustaría infromarte acerca de avances sobre la batalla de la ciencia
+        contra el Corona-Virus, aquí te dejamos algunos sitios para que puedas
+        visitar.Siempre recordá que si querés ser un buen científico debes saber
+        recolectar información de calidad.
       </p>
       <ul class="list-unstyled">
+        <!-- Fuentes recomendadas con logo y rutas fuera del sitio web-->
         <li class="media my-4">
           <img
             src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_who.jpg?v=1589723656592"
@@ -130,7 +179,7 @@
           />
           <div class="media-body">
             <h5 class="mt-0 mb-1">Organización Mundial de la Salud</h5>
-            
+
             <a href="https://www.who.int/es" class="btn btn-dark">Ir</a>
           </div>
         </li>
@@ -141,8 +190,8 @@
             alt="logo OPS"
           />
           <div class="media-body">
-            <h5 class="mt-0 mb-1">Organización Panamericana de la Salud </h5>
-            
+            <h5 class="mt-0 mb-1">Organización Panamericana de la Salud</h5>
+
             <a href="https://www.paho.org/es" class="btn btn-dark">Ir</a>
           </div>
         </li>
@@ -153,8 +202,8 @@
             alt="logo NIL"
           />
           <div class="media-body">
-            <h5 class="mt-0 mb-1">Bibloteca Nacional de Medicina de EEUU </h5>
-            
+            <h5 class="mt-0 mb-1">Bibloteca Nacional de Medicina de EEUU</h5>
+
             <a href="https://www.paho.org/es" class="btn btn-dark">Ir</a>
           </div>
         </li>
@@ -192,22 +241,14 @@
           </div>
         </li>
       </ul>
-     
     </div>
 
+    <!--Pie de pagina-->
     <section class="footer">
-      <div>
-        <!--Pie de pagina-->
-        <p
-          style="color:cornsilk"
-          ;
-          background="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_viktor-forgacs-fcdqdjum6b4-unsplash.jpg?v=1588799035102"
-        >
-          Para mas información no dudes en contactarte
-        </p>
-        <a href="/contacto" class=" volver btn btn-dark">Contacto</a>
-      </div>
+      <p style="color:cornsilk">
+        Para más información no dudes en contactarte
+      </p>
+      <a href="/contacto" class="btn btn-dark">Contacto</a>
     </section>
   </body>
 </html>
-
