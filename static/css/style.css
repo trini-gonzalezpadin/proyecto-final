@@ -4,6 +4,11 @@ margin: 0em;
 background-color: grey;
 }
 
+.fondo{
+  background-color: grey;
+
+}
+
  /* Estilo aplicado a todas las portadas */
 .cover {
   height: 400px;
@@ -28,6 +33,7 @@ background-color: grey;
 
 
 .indexcards{
+  /*background-color: gray;*/
   margin-left: 5px;
   margin-top: 5px;
   margin-bottom: 2px;
