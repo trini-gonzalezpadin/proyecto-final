@@ -1,13 +1,9 @@
-/* Estilo de barra de navegacion y fondo */
+/* Estilo de fondo */
 body {
 margin: 0em;
 background-color: grey;
 }
 
-.fondo{
-  background-color: grey;
-
-}
 
  /* Estilo aplicado a todas las portadas */
 .cover {
@@ -20,7 +16,7 @@ background-color: grey;
 }
 
 
-/*estilo de texto muy usado */
+/*estilo de texto en introducciones */
 .introsalud{
   font-size: medium;
   text-align: left;
@@ -31,9 +27,8 @@ background-color: grey;
 
 }
 
-
+/*márgenes para secciones */
 .indexcards{
-  /*background-color: gray;*/
   margin-left: 5px;
   margin-top: 5px;
   margin-bottom: 2px;
