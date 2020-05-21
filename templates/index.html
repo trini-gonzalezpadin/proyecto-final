@@ -10,21 +10,16 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
-    />
-    <!-- Anclaje con el Framework de BOOTSRAP-->
+    /><!-- Anclaje con el Framework de BOOTSRAP-->
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/style.css') }}"
-    />
-    <!-- Anclaje al archivo de estilos-->
+    /> <!-- Anclaje al archivo de estilos-->
   </head>
   <body class="fondo">
-    <!-- Barra de navegacion y portada-->
-
-    <header>
+    <header><!-- Barra de navegacion y portada-->
       <nav
         class="navbar navbar-expand-lg navbar-light bg-light bg-dark navbar navbar-dark "
-       
       ><!-- estilo de la navegación-->
 
         <a class="navbar-brand" href="#">
@@ -35,17 +30,15 @@
             height="60"
             alt=""
           /><!-- Logo con atributos  (sin ruta)-->
-
         </a>
-        <ul><!-- opciones de la navegación con rutas (interiores)-->
+        <ul>
+          <!-- opciones de la navegación con rutas (internas)-->
 
           <li class="nav-item active">
             <a class="nav-link btn btn-dark" href="/"> Inicio </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-dark " href="{{ url_for('contacto') }} ">
-              Contacto</a
-            >
+            <a class="nav-link btn btn-dark " href="{{ url_for('contacto') }} ">Contacto</a>
           </li>
         </ul>
       </nav>
@@ -53,45 +46,40 @@
       <div
         class="cover d-flex justify-content-center align-items-center flex-column"
         style="background-image: url(https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_pills-on-blue-background-3936369.jpg?v=1589211449978);"
-      ><!-- foto de portada -->
-            <h3>La Pandemia del siglo 21</h3>
+      >
+        <!-- foto de portada -->
+        <h3>La Pandemia del siglo 21</h3>
       </div>
     </header>
     <!-- cuerpo de la seccion-->
-    <section class="indexcards">
-      <!-- Presentacion de las 4 cartas:título,descripción,imagen(atributos)y ruta(interna)-->
+    <section class="indexcards"><!-- Presentacion de las 4 cartas:título,descripción,imagen(atributos)y ruta(interna)-->
       <div class="container mt-5 mb-5">
         <div class="row justify-content-start">
-          <div class="col-12 col-sm-6 mt-2">
+          <div class="col-12 col-sm-6 mt-2"><!-- Carta ciencia-->
             <div class="card">
               <img
                 src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_1cdc-w9keokhajkw-unsplash.jpg?v=1588691997173"
                 class="card-img card-img-top"
                 alt="foto ciencia"
-              /><!-- imagen que ajusto a la carta-->
-
+              />
               <div class="card-body">
-                <!-- Carta ciencia-->
                 <h5 class="card-title">La Ciencia y el Corona Virus</h5>
                 <p class="card-text">
                   Informate sobre los avances y novedades de la ciencia de la
                   lucha contra el virus
                 </p>
-                <a href="{{ url_for('informacionc') }}" class="btn btn-dark"
-                  >Entrar</a
-                >
+                <a href="{{ url_for('informacionc') }}" class="btn btn-dark">Entrar</a>
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 mt-2">
+          <div class="col-12 col-sm-6 mt-2"><!-- Carta salud-->
             <div class="card">
               <img
                 src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_jamie-street-tb5a-qti6xg-unsplash.jpg?v=1588692229998"
                 class=" card-img card-img-top"
                 alt="foto salud"
-              /><!-- imagen que ajusto a la carta-->
+              />
               <div class="card-body">
-                <!-- Carta salud-->
                 <h5 class="card-title">Salud en casa</h5>
                 <p class="card-text">
                   Lista de compras inteligentes, ejercicio y recomendaciones
@@ -101,35 +89,31 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 mt-2">
+          <div class="col-12 col-sm-6 mt-2"><!-- Carta informacion util-->
             <div class="card">
               <img
                 src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_jessica-lewis-vi6szzwgc34-unsplash.jpg?v=1589333623353"
                 class="card-img card-img-top"
                 alt="foto lavamanos"
-              /><!-- imagen que ajusto a la carta-->
+              />
               <div class="card-body">
-                <!-- Carta informacion util-->
                 <h5 class="card-title">Información Útil</h5>
                 <p class="card-text">
                   Informate de síntomas y protocolos de seguridad e higiene
                 </p>
-                <a href="{{ url_for('manualp') }}" class="btn btn-dark"
-                  >Entrar</a
-                >
+                <a href="{{ url_for('manualp') }}" class="btn btn-dark">Entrar</a>
               </div>
             </div>
           </div>
 
-          <div class="col-12 col-sm-6 mt-2">
+          <div class="col-12 col-sm-6 mt-2"><!-- Carta Aprendizaje-->
             <div class="card">
               <img
                 src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_anastasiia-chepinska-obmbhmrc3pw-unsplash.jpg?v=1589731177849"
                 class="card-img card-img-top"
                 alt="foto ventanal"
-              /><!-- imagen que ajusto a la carta-->
+              />
               <div class="card-body">
-                <!-- Carta Aprendizaje-->
                 <h5 class="card-title">Aprender en casa</h5>
                 <p class="card-text">
                   Encontrá ideas para recrearte y consejos útlies para la
@@ -151,4 +135,5 @@
     </section>
   </body>
 </html>
+
 

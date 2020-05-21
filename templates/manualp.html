@@ -10,17 +10,14 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
-    />
-    <!-- Anclaje con el Framework de BOOTSRAP-->
+    /><!-- Anclaje con el Framework de BOOTSRAP-->
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/style.css') }}"
-    />
-    <!-- Anclaje al archivo de estilos-->
+    /><!-- Anclaje al archivo de estilos-->
   </head>
   <body class="fondo">
-    <!-- Barra de navegacion y portada-->
-    <header>
+    <header><!-- Barra de navegacion y portada-->
       <nav
         class="navbar navbar-expand-lg navbar-light bg-light bg-dark navbar navbar-dark "
       ><!-- estilo de la navegación-->
@@ -33,14 +30,13 @@
             alt=""
           /><!-- Logo con atributos (sin ruta)-->
         </a>
-        <ul><!-- opciones de la navegación con rutas (interiores)-->
+        <ul>
+          <!-- opciones de la navegación con rutas (interiores)-->
           <li class="nav-item active">
             <a class="nav-link btn btn-dark" href="/">Inicio </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-dark" href="{{ url_for('contacto') }}"
-              >Contacto</a
-            >
+            <a class="nav-link btn btn-dark" href="{{ url_for('contacto') }}">Contacto</a>
           </li>
         </ul>
       </nav>
@@ -53,8 +49,7 @@
         </h1>
       </div>
     </header>
-    <p class="introsalud">
-      <!-- Introduccion a la seccion-->
+    <p class="introsalud"><!-- Introduccion a la seccion-->
       <u> Para tomar nota</u>
       Aquí podes encontrar de forma sencilla la información importante que
       deberías saber acerca de protoloclos, medidas de seguridad e higiene,
@@ -62,15 +57,13 @@
       de la Ciudad de Mendoza para que nos mantengamos siempre informados.
     </p>
 
-    <section>
-      <!-- corredera de imágenes-->
+    <section><!-- corredera de imágenes-->
       <marquee
         onmouseover="stop()"
         onmouseout="start()"
         scrolldelay="100"
         direction="left"
-        crollamount="8"
-        ><!-- propiedades de la corredera -->
+        crollamount="8"><!-- propiedades de la corredera -->
         <img
           src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Fmm.jpg?v=1589393718590"
           class="traino img-thumbnail rounded"
@@ -150,8 +143,8 @@
           class="img-thumbnail rounded"
           width="500"
           height="500"
-        />
-      </marquee><!-- Todas las imagenes con el mismo estilo(borde redondeado blanco) -->
+        /> </marquee
+      ><!-- Todas las imagenes con el mismo estilo(borde redondeado blanco) -->
     </section>
 
     <!--Pie de pagina-->
@@ -159,7 +152,8 @@
       <p>
         Para más información no dudes en contactarte
       </p>
-      <a href="/contacto" class="btn btn-dark">Contacto</a><!--botón a la plantilla de contacto-->
+      <a href="/contacto" class="btn btn-dark">Contacto</a
+      ><!--botón a la plantilla de contacto-->
     </section>
   </body>
 </html>

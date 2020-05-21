@@ -5,22 +5,19 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Anclaje con el Framework de BOOTSRAP-->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
-    />
-    <!-- Anclaje al archivo de estilos-->
+    /><!-- Anclaje con el Framework de BOOTSRAP-->
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/style.css') }}"
-    />
+    /><!-- Anclaje al archivo de estilos-->
   </head>
   <body class="fondo">
-    <!-- Barra de navegacion y portada-->
-    <header>
+    <header><!-- Barra de navegacion y portada-->
       <nav
         class="navbar navbar-expand-lg navbar-light bg-light bg-dark navbar navbar-dark "
       ><!-- estilo de la navegación-->
@@ -33,14 +30,13 @@
             alt=""
           /><!-- Logo con atributos  (sin ruta)-->
         </a>
-        <ul><!-- opciones de la navegación con rutas (interiores)-->
+        <ul>
+          <!-- opciones de la navegación con rutas (interiores)-->
           <li class="nav-item active">
             <a class="nav-link btn btn-dark" href="/">Inicio </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-dark" href="{{ url_for('contacto') }}"
-              >Contacto</a
-            >
+            <a class="nav-link btn btn-dark" href="{{ url_for('contacto') }}">Contacto</a>
           </li>
         </ul>
       </nav>
@@ -54,8 +50,7 @@
       </div>
     </header>
     <!-- cuerpo principal de la sección-->
-    <section class="indexcards">
-      <!-- introduccion de la seccion con imagen-->
+    <section class="indexcards"><!-- introduccion de la seccion con imagen-->
       <p class="introsalud">
         <img
           src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_edu.jpg?v=1589226915200 "
@@ -69,8 +64,7 @@
       </p>
     </section>
     <div class="indexcards">
-      <u><h2>Consejos útiles</h2></u
-      ><!--lista decirpitiva -->
+      <u><h2>Consejos útiles</h2></u><!--lista descriptiva -->
 
       <dl>
         <dt><u>Conocimiento de la herramienta</u></dt>
@@ -121,7 +115,8 @@
       <p>
         Para más información no dudes en contactarte
       </p>
-      <a href="/contacto" class="btn btn-dark">Contacto</a><!--botón a la plantilla de contacto-->
+      <a href="/contacto" class="btn btn-dark">Contacto</a
+      ><!--botón a la plantilla de contacto-->
     </section>
   </body>
 </html>

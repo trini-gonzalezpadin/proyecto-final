@@ -10,18 +10,14 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
-    />
-    <!-- Anclaje con el Framework de BOOTSRAP-->
+    /><!-- Anclaje con el Framework de BOOTSRAP-->
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/style.css') }}"
-    />
-    <!-- Anclaje al archivo de estilos-->
+    /><!-- Anclaje al archivo de estilos-->
   </head>
   <body class="fondo">
-    <!-- Barra de navegacion y portada-->
-
-    <header>
+    <header><!-- Barra de navegacion y portada-->
       <nav
         class="navbar navbar-expand-lg navbar-light bg-light bg-dark navbar navbar-dark "
       ><!-- estilo de la navegación-->
@@ -34,14 +30,13 @@
             alt=""
           /><!-- Logo con atributos (sin ruta)-->
         </a>
-        <ul><!-- opciones de la navegación con rutas (interiores)-->
+        <ul>
+          <!-- opciones de la navegación con rutas (interiores)-->
           <li class="nav-item active">
             <a class="nav-link btn btn-dark" href="/">Inicio </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-dark" href="{{ url_for('contacto') }}"
-              >Contacto</a
-            >
+            <a class="nav-link btn btn-dark" href="{{ url_for('contacto') }}">Contacto</a>
           </li>
         </ul>
       </nav>
@@ -55,8 +50,7 @@
       </div>
     </header>
     <!-- cuerpo de la seccion-->
-    <section class="indexcards">
-      <!-- Introducción a la sección-->
+    <section class="indexcards"><!-- Introducción a la sección-->
       <p class="introsalud">
         <u> Sistema inmune:</u>
         Se trata de nuestro ejército de batalla frente a la invasión de agentes
@@ -81,8 +75,7 @@
         efectos de placer y euforia en el cererbro causando sensación de bien
         estar en el individuo factor de gran importanica en la situación actual.
       </p>
-      <div class="container mt-5 mb-5">
-        <!-- Presentación de las 2 cratas:imagen(atributos),título,descrpción y ruta (interna)-->
+      <div class="container mt-5 mb-5"><!-- Presentación de las 2 cratas:imagen(atributos),título,descrpción y ruta (interna)-->
         <div class="row justify-content-start">
           <div class="col-12 col-sm-6 mt-2"><!-- Carta nutrición-->
             <div class="card">
@@ -97,9 +90,7 @@
                   Infromación nutrcional y lista de compras inteligente para
                   reforzar el sistema inmune
                 </p>
-                <a href="{{ url_for('listasuper') }}" class="btn btn-dark"
-                  >Ir</a
-                >
+                <a href="{{ url_for('listasuper') }}" class="btn btn-dark">Ir</a>
               </div>
             </div>
           </div>
@@ -115,9 +106,7 @@
                 <p class="card-text">
                   Ideas para entrenar en casa
                 </p>
-                <a href="{{ url_for('entrenamiento') }}" class="btn btn-dark"
-                  >Ir</a
-                >
+                <a href="{{ url_for('entrenamiento') }}" class="btn btn-dark" >Ir</a>
               </div>
             </div>
           </div>

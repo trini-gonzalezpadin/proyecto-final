@@ -10,18 +10,14 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
-    />
-    <!-- Anclaje con el Framework de BOOTSRAP-->
+    /><!-- Anclaje con el Framework de BOOTSRAP-->
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/style.css') }}"
-    />
-    <!-- Anclaje al archivo de estilos-->
+    /><!-- Anclaje al archivo de estilos-->
   </head>
   <body class="fondo">
-    <!-- Barra de navegacion y portada-->
-
-    <header>
+    <header><!-- Barra de navegacion y portada-->
       <nav
         class="navbar navbar-expand-lg navbar-light bg-light bg-dark navbar navbar-dark "
       ><!-- estilo de la navegación-->
@@ -34,14 +30,13 @@
             alt=""
           /><!-- Logo con atributos  (sin ruta)-->
         </a>
-        <ul><!-- opciones de la navegación con rutas (interiores)-->
+        <ul>
+          <!-- opciones de la navegación con rutas (interiores)-->
           <li class="nav-item active">
             <a class="nav-link btn btn-dark" href="/">Inicio </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-dark" href="{{ url_for('contacto') }}"
-              >Contacto</a
-            >
+            <a class="nav-link btn btn-dark" href="{{ url_for('contacto') }}">Contacto</a>
           </li>
         </ul>
       </nav>
@@ -56,9 +51,7 @@
     </header>
     <!-- cuerpo de la seccion-->
     <section class="indexcards">
-      <h2><u>Actividades sugeridas </u></h2>
-      <!-- lista con imágenes y rutas(externas)-->
-
+      <h2><u>Actividades sugeridas </u></h2><!-- lista con imágenes y rutas(externas)-->
       <ul class="list-unstyled"><!--Elementos lista:imagen(atributo),titulo,decripcion y ruta(externa)-->
         <li class="media my-4">
           <img
@@ -72,10 +65,7 @@
             creativas, animate a pintar, dibujar, recortar al mejor estilo art
             attack.Te dejamos un lugar para que busques algunas ideas
             ¡Compartinos tus creaciones cuando esten listas!
-            <a
-              href="https://ar.pinterest.com/cejaurena/manualidades-para-la-cuarentena/"
-              class="btn btn-dark"
-              >Ir</a>
+            <a href="https://ar.pinterest.com/cejaurena/manualidades-para-la-cuarentena/"class="btn btn-dark">Ir</a>
           </div>
         </li>
         <li class="media my-4">
@@ -89,10 +79,7 @@
             Nada más lindo que ver películas en casa, te recomendamos un sitio
             donde podes encontrar las mejores películas y series recomendadas
             según tus intereses
-            <a
-              href="http://www.sensacine.com/peliculas/mejores/nota-espectadores/"
-              class="btn btn-dark"
-              >Ir</a >
+            <a href="http://www.sensacine.com/peliculas/mejores/nota-espectadores/"class="btn btn-dark">Ir</a>
           </div>
         </li>
         <li class="media my-4">
@@ -108,10 +95,7 @@
             playlist ideal en spotify de manera super persoanlizada para que
             escuches en tú casa. Bailá, ordená ,limpiá y dejate fluir liberando
             endorfinas que alimenten tu cuerpo.
-            <a
-              href="https://open.spotify.com/playlist/5IO45YtKXacQ3ACtDLihbP"
-              class="btn btn-dark"
-              >Ir</a>
+            <a href="https://open.spotify.com/playlist/5IO45YtKXacQ3ACtDLihbP"class="btn btn-dark" >Ir</a>
           </div>
         </li>
         <li class="media my-4">
@@ -124,10 +108,7 @@
             <h5 class="mt-0 mb-1"><u>Lecturas</u></h5>
             Para los grandes lectores que disfrutan de novelas, polciales,libros
             de ciencia ficción, encontrá listas de libros según tu intereses.
-            <a
-              href="https://www.casadellibro.com/libros-recomendados"
-              class="btn btn-dark"
-              >Ir</a>
+            <a href="https://www.casadellibro.com/libros-recomendados"class="btn btn-dark">Ir</a>
           </div>
         </li>
         <li class="media my-4">
@@ -171,7 +152,8 @@
       <p>
         Para más información no dudes en contactarte
       </p>
-      <a href="/contacto" class="btn btn-dark">Contacto</a><!--botón a la plantilla de contacto-->
+      <a href="/contacto" class="btn btn-dark">Contacto</a
+      ><!--botón a la plantilla de contacto-->
     </section>
   </body>
 </html>

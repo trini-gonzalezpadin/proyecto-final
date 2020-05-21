@@ -10,17 +10,14 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
-    />
-    <!-- Anclaje con el Framework de BOOTSRAP-->
+    /><!-- Anclaje con el Framework de BOOTSRAP-->
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/style.css') }}"
-    />
-    <!-- Anclaje al archivo de estilos-->
+    /><!-- Anclaje al archivo de estilos-->
   </head>
   <body class="fondo">
-    <!-- Barra de navegacion y portada-->
-    <header>
+    <header><!-- Barra de navegacion y portada-->
       <nav
         class="navbar navbar-expand-lg navbar-light bg-light bg-dark navbar navbar-dark "
       ><!-- estilo de la navegación-->
@@ -33,14 +30,13 @@
             alt=""
           /><!-- Logo con atributos  (sin ruta)-->
         </a>
-        <ul><!-- opciones de la navegación con rutas (interiores)-->
+        <ul>
+          <!-- opciones de la navegación con rutas (interiores)-->
           <li class="nav-item active">
             <a class="nav-link btn btn-dark" href="/">Inicio </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-dark" href="{{ url_for('contacto') }}"
-              >Contacto</a
-            >
+            <a class="nav-link btn btn-dark" href="{{ url_for('contacto') }}">Contacto</a>
           </li>
         </ul>
       </nav>
@@ -55,8 +51,7 @@
     </header>
     <!-- cuerpo de la seccion-->
 
-    <section class="indexcards">
-      <!-- Introduccion a la seccion con imagen al costado-->
+    <section class="indexcards"><!-- Introduccion a la seccion con imagen al costado-->
       <p class="introsalud">
         <img
           src=" https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_img-8012_1.jpg?v=1589334205928"
@@ -69,17 +64,12 @@
         visitar para inspirarte y sacar tu mejor versión
       </p>
     </section>
-    <div class="indexcards">
-      <!-- links a sitios recomendados-->
+    <div class="indexcards"><!-- links a sitios recomendados-->
       <h3><u>Sitios recomedados:</u></h3><!--cada uno con ruta(externa) y boton con estilo-->
       <p>Gym Virtual</p>
       <a href="http://gymvirtual.com/" class="btn btn-dark">Ir</a>
       <p>Runtastic-Addidas</p>
-      <a
-        href="https://www.runtastic.com/blog/es/entrenar-en-casa-sin-equipamiento/ "
-        class="btn btn-dark"
-        >Ir</a
-      >
+      <a href="https://www.runtastic.com/blog/es/entrenar-en-casa-sin-equipamiento/ "class="btn btn-dark">Ir</a>
       <p>Mi gimnasio en casa</p>
       <a href="https://migymencasa.com/" class="btn btn-dark">Ir</a>
       <p>Nerd Fitness</p>
@@ -93,7 +83,8 @@
       <p>
         Para más información no dudes en contactarte
       </p>
-      <a href="/contacto" class="btn btn-dark">Contacto</a><!--botón a la plantilla de contacto-->
+      <a href="/contacto" class="btn btn-dark">Contacto</a
+      ><!--botón a la plantilla de contacto-->
     </section>
   </body>
 </html>

@@ -10,20 +10,18 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
-    />
-    <!-- Anclaje con el Framework de BOOTSRAP-->
+    /><!-- Anclaje con el Framework de BOOTSRAP-->
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/style.css') }}"
-    />
-    <!-- Anclaje al archivo de estilos-->
+    /><!-- Anclaje al archivo de estilos-->
   </head>
   <body class="fondo">
-    <!-- Barra de navegacion y portada-->
-    <header>
+    <header><!-- Barra de navegacion y portada-->
       <nav
         class="navbar navbar-expand-lg navbar-light bg-light bg-dark navbar navbar-dark "
-      ><!--estilo barra navegación-->
+      >
+        <!--estilo barra navegación-->
         <a class="navbar-brand" href="#">
           <img
             src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_branimir-balogovic-faiqrv7fge0-unsplash.jpg?v=1588692801974"
@@ -33,14 +31,13 @@
             alt=""
           /><!--logo con atributos (sin ruta)-->
         </a>
-        <ul><!--opciones de la navegacion con rutas(internas)-->
+        <ul>
+          <!--opciones de la navegacion con rutas(internas)-->
           <li class="nav-item active">
             <a class="nav-link btn btn-dark" href="/">Inicio </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-dark" href="{{ url_for('contacto') }}"
-              >Contacto</a
-            >
+            <a class="nav-link btn btn-dark" href="{{ url_for('contacto') }}">Contacto</a>
           </li>
         </ul>
       </nav>
@@ -55,8 +52,7 @@
       </div>
     </header>
     <!-- cuerpo de la seccion-->
-    <div class="indexcards">
-      <!-- Introduccion 1 de la seccion-->
+    <div class="indexcards"><!-- Introduccion 1 de la seccion-->
       <h2><u> Pandemia de información</u></h2>
       <p class="introsalud">
         Nos encontramos frente a un mar inmenso de información acerca del Corona
@@ -67,8 +63,7 @@
       </p>
     </div>
 
-    <div class="indexcards">
-      <!-- Lista descirptiva-->
+    <div class="indexcards"><!-- Lista descirptiva-->
       <h3><u>Glosario</u></h3>
 
       <dl>
@@ -133,7 +128,7 @@
       </dl>
     </div>
 
-    <!-- Imágenes centradas-->
+    <!-- Imágenes centradas con atributo-->
     <div style="float:left;width:50%;">
       <div style="padding-right:10px;">
         <div class="text-center">
@@ -157,8 +152,8 @@
     </div>
 
     <div style="clear: both;"></div>
-    <!--Introducción 2 -->
-    <div class="indexcards">
+
+    <div class="indexcards"><!--Introducción 2 -->
       <p class="introsalud">
         <u> Investigación Crítica:</u>
         Frente a la situación de contingencia como usarios de redes sociales y
@@ -168,8 +163,9 @@
         visitar.Siempre recordá que si querés ser un buen científico debes saber
         recolectar información de calidad.
       </p>
-      <!-- Fuentes recomendadas con logo y rutas (externas)-->
-      <ul class="list-unstyled"><!-- Elementos de la lista:logo(atributo),nombre y ruta(boton)-->
+      <!-- Fuentes recomendadas-->
+      <ul class="list-unstyled">
+        <!-- Elementos de la lista:logo(atributo),nombre y ruta(boton)-->
         <li class="media my-4">
           <img
             src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_who.jpg?v=1589723656592"
@@ -251,3 +247,4 @@
     </section>
   </body>
 </html>
+

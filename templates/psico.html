@@ -10,18 +10,15 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
-    />
-    <!-- Anclaje con el Framework de BOOTSRAP-->
+    /><!-- Anclaje con el Framework de BOOTSRAP-->
 
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/style.css') }}"
-    />
-    <!-- Anclaje al archivo de estilos-->
+    /><!-- Anclaje al archivo de estilos-->
   </head>
   <body class="fondo">
-    <header>
-      <!-- Barra de navegacion y portada-->
+    <header><!-- Barra de navegacion y portada-->
       <nav
         class="navbar navbar-expand-lg navbar-light bg-light bg-dark navbar navbar-dark "
       ><!-- estilo de la navegación-->
@@ -34,14 +31,13 @@
             alt=""
           /><!-- Logo con atributos (sin ruta)-->
         </a>
-        <ul><!-- opciones de la navegación con rutas (interiores)-->
+        <ul>
+          <!-- opciones de la navegación con rutas (internas)-->
           <li class="nav-item active">
             <a class="nav-link btn btn-dark" href="/">Inicio </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-dark" href="{{ url_for('contacto') }}"
-              >Contacto</a
-            >
+            <a class="nav-link btn btn-dark" href="{{ url_for('contacto') }}">Contacto</a>
           </li>
         </ul>
       </nav>
@@ -55,10 +51,9 @@
       </div>
     </header>
     <!-- cuerpo de la sección-->
-    <section class="indexcards">
+    <section class="indexcards"><!-- Introducción a la sección-->
       <p class="introsalud">
-        <u>Salud Mental</u
-        ><!-- Introducción a la sección-->
+        <u>Salud Mental</u>
         Frente a las condiciones de encierro debemos prioirzar el cudiado de
         nuestra salud mental.El intelecto es la mejor herramienta que podemos
         desarollar para el futuro.Por esto deberíamos aprovechar la cuarentena
@@ -70,12 +65,10 @@
         de la recreación como la de aprendizaje a distancia.
       </p>
 
-      <div class="container mt-5 mb-5">
-        <!-- Presentación de las 2 cartas con rutas -->
+      <div class="container mt-5 mb-5"><!-- Presentación de las 2 cartas (tutas internas)-->
         <div class="row justify-content-start">
-          <div class="col-12 col-sm-6 mt-2">
+          <div class="col-12 col-sm-6 mt-2"><!-- Carta-recreación-->
             <div class="card">
-              <!-- Carta-recreación con imagen ajustada al estilo de la carta-->
               <img
                 src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_steve-johnson-idmd4iw9xve-unsplash.jpg?v=1589159161091"
                 class="card-img card-img-top"
@@ -86,15 +79,12 @@
                 <p class="card-text">
                   Explotá tu creatividad al 100%
                 </p>
-                <a href="{{ url_for('recreacion') }}" class="btn btn-dark"
-                  >Ir</a
-                ><!--Ruta (interna)-->
+                <a href="{{ url_for('recreacion') }}" class="btn btn-dark">Ir</a><!--Ruta (interna)-->
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 mt-2">
+          <div class="col-12 col-sm-6 mt-2"><!-- Carta.EAD-->
             <div class="card">
-              <!-- Carta.EAD-->
               <img
                 src="https://cdn.glitch.com/94b1782f-485d-4be9-be6b-b48fefbcb22b%2Frsz_frank-vessia-9uprlljfkp8-unsplash_1.jpg?v=1589160069846"
                 class=" card-img card-img-top"
@@ -105,9 +95,7 @@
                 <p class="card-text">
                   Las claves del éxito para aprender en casa
                 </p>
-                <a href="{{ url_for('aprendizaje') }}" class="btn btn-dark"
-                  >Ir</a
-                ><!-- Ruta(interna)-->
+                <a href="{{ url_for('aprendizaje') }}" class="btn btn-dark">Ir</a><!-- Ruta(interna)-->
               </div>
             </div>
           </div>
@@ -120,7 +108,8 @@
       <p>
         Para más información no dudes en contactarte
       </p>
-      <a href="/contacto" class="btn btn-dark">Contacto</a><!--botón a la plantilla de contacto-->
+      <a href="/contacto" class="btn btn-dark">Contacto</a
+      ><!--botón a la plantilla de contacto-->
     </section>
   </body>
 </html>

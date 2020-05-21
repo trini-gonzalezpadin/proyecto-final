@@ -10,18 +10,15 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
-    />
-    <!-- Anclaje con el Framework de BOOTSRAP-->
+    /><!-- Anclaje con el Framework de BOOTSRAP-->
 
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/style.css') }}"
-    />
-    <!-- Anclaje al archivo de estilos-->
+    /><!-- Anclaje al archivo de estilos-->
   </head>
   <body class="fondo">
-    <!-- Barra de navegacion y portada-->
-    <header>
+    <header><!-- Barra de navegacion y portada-->
       <nav
         class="navbar navbar-expand-lg navbar-light bg-light bg-dark navbar navbar-dark "
       ><!-- estilo de la navegación-->
@@ -34,14 +31,13 @@
             alt=""
           /><!-- Logo con atributos  (sin ruta)-->
         </a>
-        <ul><!-- opciones de la navegación con rutas (interiores)-->
+        <ul>
+          <!-- opciones de la navegación con rutas (interiores)-->
           <li class="nav-item active">
             <a class="nav-link btn btn-dark" href="/">Inicio </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-dark" href="{{ url_for('contacto') }}"
-              >Contacto</a
-            >
+            <a class="nav-link btn btn-dark" href="{{ url_for('contacto') }}">Contacto</a>
           </li>
         </ul>
       </nav>
@@ -58,9 +54,7 @@
 
     <!-- cuerpo de la seccion-->
     <section class="indexcards">
-      <h2><u>Información sobre los Macro-Nutrientes </u></h2>
-      <!-- Listado macro nutrientes:foto(atributo),nombre y texto-->
-
+      <h2><u>Información sobre los Macro-Nutrientes </u></h2><!-- Listado macro nutrientes:foto(atributo),nombre y texto-->
       <ul class="list-unstyled">
         <li class="media my-4">
           <img
@@ -136,8 +130,7 @@
         </li>
       </ul>
 
-      <div class="indexcards">
-        <!-- listado descriptivo de compras -->
+      <div class="indexcards"><!-- listado descriptivo de compras -->
         <h2>
           <u>Lista de Compras Inteligente</u>
           <img
@@ -149,7 +142,8 @@
           /><!-- imagen con atributos -->
         </h2>
 
-        <dl><!-- Elementos de la lista -->
+        <dl>
+          <!-- Elementos de la lista -->
           <dt><u>Frutas y Verduras</u></dt>
           <dd>
             Serán las fuentes NATURALES de vitaminas y minerales.Algunas ideas
@@ -198,6 +192,7 @@
     </section>
   </body>
 </html>
+
 
 
   
