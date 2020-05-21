@@ -54,7 +54,7 @@ def aprendizaje():
     return  render_template('aprendizaje.html')
 
 
-#Validacion,deja el programa en ejecucion
+#if:validacion
 #host:acceder desde otras IP
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0")
